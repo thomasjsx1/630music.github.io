@@ -1,0 +1,54 @@
+<!doctype html>
+	<html lang="fr">
+		<head>
+			<title> 630 MUSIC </title>
+			<meta charset="utf-8">
+			<link rel="stylesheet" type="text/css"
+			href="{{url_for('static',filename='style2.css')}}" />
+		    <meta charset="utf-8">
+
+			<link rel="stylesheet" href ="style.css">
+			<style>@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200&display=swap');</style>
+			<style>@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200&family=Rubik&display=swap'); </style>
+			<style>@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');</style>
+			<style>@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap');</style>
+			<style>@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');</style>
+			<style>@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');</style>
+			<style>@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');</style>
+			<style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');</style>
+			<style>@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');</style>
+		</head>	
+	<body>
+					<nav>
+					<ul>
+						<li id="logo"><a href="#">630 MUSIC</a></li>
+						<li><form action="http://localhost:5000/contact.html" method="post"><button class="nav1"><a href="#" value="envoyer"><p>CONTACT</p></a></button></form></li>					
+						<li><form action="http://localhost:5000/instruments.html" method="post"><button class="nav1"><a href="#"><p>INSTRUMENTS</p></a></button></form></li>
+						<li><form action="http://localhost:5000/" method="get"><button class="nav1"><a href="#"><p>ACCUEIL</p></a></button></form></li>	
+					</ul>
+				</nav>
+	<div id="imagePrincipale"></div>
+	<div id="centrage"><h1>FAIS TA PROPRE MUSIQUE</h1></div>
+	<br>
+	<br>
+	<div id="centrage"><h2>MAINTENANT CHOISIS TES AMBIANCES</h2></div>
+	<br>
+	<br>
+	<th><td>
+	<form action="http://localhost:5000/resultat3.html" method="post">
+	<div id="centrage"><select name="choix3" >
+	<option name="VIOLON" value="VIOLON">VIOLON</option>	
+	<option name="S.VIOLON" value="S.VIOLON">SANS VIOLON</option>
+	<option name="VIOLON.R" value="VIOLON.R">VIOLON REVERSE</option>
+	
+	
+	</select></div>
+		<br>
+		<div id="centrage"><div class="container"><button class="btn" href="#" value="envoyer">CONFIRMER</button></div></div>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+</body>

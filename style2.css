@@ -1,0 +1,363 @@
+ul {
+	margin:0;
+	padding:0;
+}
+li {
+	list-style-type:none;
+}
+
+a {
+	text-decoration:none;
+	color: black;
+}
+
+button.nav1 {
+	background-color:#4F4F4F;
+	border: none;
+	float:right;
+	font-size:16px;
+	font-weight:bold;
+	font-family: 'Josefin Sans', sans-serif;
+	
+	
+}
+
+a.1 {
+	font-family: 'Josefin Sans', sans-serif;
+	color:#A0B0FD;
+}
+.reseaux {
+	font-family: 'Josefin Sans', sans-serif;
+	color:white;
+}
+
+.reseaux:hover {
+	font-family: 'Josefin Sans', sans-serif;
+	color:grey;
+	transition: all ease-in-out 350ms;
+	font-size:26px;
+}
+
+/* ******************* NAVBAR ****************** */
+nav {
+	overflow:hidden;
+	background-color: #4F4F4F;
+	position:fixed;
+	width: 100%;
+	opacity: 0.9;
+	height:60px;
+	z-index:1;
+}
+li {
+	float:right;
+	font-size:20;
+	font-weight:bold;
+	font-family: 'Josefin Sans', sans-serif;
+	
+}
+:root{
+	--pink:white;
+}
+li a {
+	text-decoration:none;
+	text-align: center;
+	padding: 5px 16px;
+	display:block;
+	position:relative;
+}  
+
+li a::after{
+	background-color:var(--pink);
+	content:'';
+	position:right;
+	display:block;
+	height:0.2em;
+	width:0%;
+	bottom:-1em;
+	transition: all ease-in-out 250ms;
+}
+
+li a:hover::after{
+	width:100%;
+}
+
+li a:hover{
+	color:var(--pink);
+}
+
+#logo{
+	font-family: 'Audiowide', cursive;
+	float:left;
+	font-weight:bold;
+	font-size:35px;
+	position:fixed;
+	
+}
+header p {
+	text-align:center;
+	font-size:30px;
+	color:white
+}
+
+li:hover {
+	font-size:16px;
+	transition:0.6s ease-out;
+	transform:scale(1.05);
+	font-weight:bold;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+
+.image1 {
+	width: 1100px;
+}
+
+.image2 {
+	width: 1000px;
+}
+.regle {
+	width: 1100px;
+	
+}
+
+
+
+
+
+/* ******************* IMAGE PRINCIPALE ******************* */
+body {
+	background-color:#090D2A;
+	padding:0;
+	margin:0;
+}
+
+#imagePrincipale {
+	padding-top:0px;
+	background:url("fond.jpg") no-repeat fixed 50% 50%;
+	background-size:cover;
+	height:520px;
+}
+
+#centrage {
+	text-align:center;
+}
+
+
+
+
+h2 {
+	color:#FFFFFF;
+    font-family: 'Oswald', sans-serif;
+	font-size:30px;	
+	
+}
+
+h3 {
+	color:#A0B0FD;
+    font-family: 'Oswald', sans-serif;
+	font-size:30px;
+	
+	
+}
+
+h4 {
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-size:50px;
+	
+}
+
+h6 {
+	color:#AE46DE;
+	font-family: 'Oswald', sans-serif;
+	font-size:25px;
+}
+h5 {
+	color:#A0B0FD;
+	font-family: 'Oswald', sans-serif;
+	font-size:50px;
+}
+
+
+h1 {
+	color:#AE46DE;
+    font-family: 'Montserrat', sans-serif;
+	font-size:50px;
+	
+}
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+
+.container {
+  width: auto;
+  margin: auto;
+}
+
+@-webkit-keyframes topAnimation {
+  from {
+    transform: translate(0rem, 0);
+  }
+  to {
+    transform: translate(0rem, 3.5rem);
+  }
+}
+
+@keyframes topAnimation {
+  from {
+    transform: translate(0rem, 0);
+  }
+  to {
+    transform: translate(0rem, 3.5rem);
+  }
+}
+@-webkit-keyframes bottomAnimation {
+  from {
+    transform: translate(-11.5rem, 0);
+  }
+  to {
+    transform: translate(0rem, 0);
+  }
+}
+@keyframes bottomAnimation {
+  from {
+    transform: translate(-11.5rem, 0);
+  }
+  to {
+    transform: translate(0rem, 0);
+  }
+}
+button.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+  border: 0;
+  position: relative;
+  letter-spacing: 0.15em;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  background: transparent;
+  outline: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+}
+button.btn::after, button.btn::before {
+  border: 0;
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 10%;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -2;
+  border-radius: 50%;
+}
+button.btn::before {
+  border: 0;
+  background-color: #A0B0FD;
+  top: -0.75rem;
+  left: 0.5rem;
+  -webkit-animation: topAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate;
+          animation: topAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate;
+}
+button.btn::after {
+  background-color: #AE46DE;
+  top: 3rem;
+  left: 13rem;
+  -webkit-animation: bottomAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
+          animation: bottomAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
+}
+button.btn:hover {
+  color: white;
+}
+button.btn:hover::before, button.btn:hover::after {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  -webkit-animation: none;
+          animation: none;
+}
+button.btn:hover::after {
+  left: 0rem;
+}
+button.btn:hover::before {
+  top: 0.5rem;
+  left: 0.35rem;
+}
+
+
+select {
+        width: 280px;
+		font-family: 'Montserrat', sans-serif;
+		font-size:18px;
+        height: 35px;
+        padding: 4px;
+        border-radius: 4px;
+        box-shadow: 2px 2px 8px #999;
+        background: #eee;
+        border: none;
+        outline: none;
+        display: inline-block;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        cursor: pointer;
+		text-align:center;
+		background-color:#A0B0FD;
+      }
+      label {
+        position: relative;
+      }
+      label:after {
+        content: "<>";
+        font: 11px "Consolas", monospace;
+        color: #666;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        right: 8px;
+        top: 2px;
+        padding: 0 0 2px;
+        border-bottom: 1px solid #ddd;
+        position: absolute;
+        pointer-events: none;
+      }
+      label:before {
+        content: "";
+        right: 6px;
+        top: 0px;
+        width: 20px;
+        height: 20px;
+        background: #eee;
+        position: absolute;
+        pointer-events: none;
+        display: block;
+      }
+	  
+	  
+audio::-webkit-media-controls-panel {
+  background-color: #A0B0FD;
+
+}
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  padding-left: 8px;
+  padding-right: 8px;
+}  
+
+table {
+	text-align: center;
+}
